@@ -49,6 +49,17 @@ document.getElementById("logoutButton").addEventListener("click", function() {
     setCookie("username", "", -1); // Delete the cookie
     location.reload(); // Reload the page to show the login form
 });
+function hideLogoutButton() {
+    const logoutButton = document.getElementById("logout");
+    if (logoutButton) {
+        logoutButton.addEventListener("click", function() {
+            logoutButton.style.display = "none"; // Hide the button
+        });
+    }
+}
+
+// Call the function to attach the event listener
+hideLogoutButton();
 
 // Check if user is already logged in when the page loads
 window.onload = checkLogin;
