@@ -6,5 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+	   <h2>Login</h2>
+    <div id="loginForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button id="loginButton">Login</button>
+    </div>
+    <div id="welcomeMessage" style="display:none;">
+        <h2>Welcome back, <span id="user"></span>!</h2>
+        <button id="logoutButton">Logout</button>
+    </div>
+	  <script src="script.js"></script>
+  </body>
 </html>
