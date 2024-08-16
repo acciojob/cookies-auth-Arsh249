@@ -45,17 +45,10 @@ document.getElementById("loginButton").addEventListener("click", function() {
 });
 
 // Function to handle logout
-document.getElementById("logoutButton").addEventListener("click", function() {
+document.getElementById("logout").addEventListener("click", function() {
     setCookie("username", "", -1); // Delete the cookie
     location.reload(); // Reload the page to show the login form
 });
-
-    const logoutButton = document.getElementById("logout");
-   
-        logoutButton.addEventListener("click", function() {
-            logoutButton.style.display = "none"; // Hide the button
-        });
-    
 
 // Check if user is already logged in when the page loads
 window.onload = checkLogin;
