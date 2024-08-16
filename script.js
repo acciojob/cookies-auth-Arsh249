@@ -43,7 +43,7 @@ function login() {
         setCookie("username", username, 7); // Store username in cookie for 7 days
         checkLoginStatus();
     } else {
-        alert("Invalid credentials");
+        alert("Invalid username or password");
     }
 }
 
