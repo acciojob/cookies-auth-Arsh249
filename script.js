@@ -45,7 +45,7 @@ document.getElementById("loginButton").addEventListener("click", function() {
 });
 
 // Function to handle logout
-document.getElementById("logout").addEventListener("click", function() {
+document.getElementById("logoutButton").addEventListener("click", function() {
     setCookie("username", "", -1); // Delete the cookie
     location.reload(); // Reload the page to show the login form
 });
